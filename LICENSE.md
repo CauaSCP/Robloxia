@@ -1,4 +1,4 @@
-Copyright © 2026 et seqq.||è§ub|| Prj. Robloxia Dev. Team
+Copyright © 2026 et seqq.<details><summary>Spoiler</summary>è§ub</details> Prj. Robloxia Dev. Team
 
 All rights reserved.
 
