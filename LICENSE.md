@@ -1,4 +1,4 @@
-Copyright © 2026 et seqq. <span style="background: currentColor; color: transparent; cursor: pointer; user-select: none;" onclick="this.style.color='inherit'; this.style.background='none';">è§ub</span> Prj. Robloxia Dev. Team All rights reserved.
+Copyright © 2026 et seqq.<span style="background: currentColor; color: transparent; cursor: pointer; user-select: none;" onclick="this.style.color='inherit'; this.style.background='none';">è§ub</span> Prj. Robloxia Dev. Team All rights reserved.
 
 All rights reserved.
 
