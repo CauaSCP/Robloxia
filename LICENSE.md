@@ -10,7 +10,7 @@ If you managed to get here, you most likely should not have access to this repos
 
 This repository contains confidential and proprietary source code belonging exclusively to Prj. Robloxia Dev. Team. Access is strictly restricted to authorized developers, contractors, collaborators, or other individuals who have been expressly granted written authorization by Prj. Robloxia Dev. Team.
 
-This repository exists solely for the internal development and maintenance of [Project/Game Name]. Possession of its contents by any unauthorized individual shall not be interpreted as granting any license, authorization, permission, or right to use the software or any portion thereof.
+This repository exists solely for the internal development and maintenance of Project: Robloxia — (Pr: Ro.). Possession of its contents by any unauthorized individual shall not be interpreted as granting any license, authorization, permission, or right to use the software or any portion thereof.
 
 Any unauthorized access, copying, reproduction, modification, execution, compilation, analysis, reverse engineering, decompilation, adaptation, publication, disclosure, transmission, redistribution, sublicensing, sale, creation of derivative works, or any other form of exploitation of this software or any part thereof is strictly prohibited.
 
@@ -26,7 +26,7 @@ Any unauthorized access, possession, disclosure, publication, distribution, repr
 
 Any current or former member of Prj. Robloxia Dev. Team, contractor, collaborator, tester, or any other individual granted authorized access who intentionally or negligently leaks, discloses, copies, publishes, distributes, transmits, or otherwise exposes confidential material contained within this repository without prior written authorization may be subject to contractual liability, civil liability, termination of access or affiliation, claims for damages, injunctive relief where applicable, and any other remedies available under applicable law.
 
-This repository and all of its contents are intended exclusively for the development and maintenance of [Project/Game Name] by authorized members of Prj. Robloxia Dev. Team. No individual or entity is granted any rights, whether express or implied, to use, reproduce, distribute, modify, disclose, analyze, reverse engineer, exploit, or otherwise benefit from any portion of this software except as expressly authorized in writing by Prj. Robloxia Dev. Team.
+This repository and all of its contents are intended exclusively for the development and maintenance of Project: Robloxia — (Pr: Ro.) by authorized members of Prj. Robloxia Dev. Team. No individual or entity is granted any rights, whether express or implied, to use, reproduce, distribute, modify, disclose, analyze, reverse engineer, exploit, or otherwise benefit from any portion of this software except as expressly authorized in writing by Prj. Robloxia Dev. Team.
 
 This notice grants no license, permission, authorization, or other rights to use, reproduce, distribute, modify, disclose, exploit, or otherwise make use of this software or any portion thereof.
 
