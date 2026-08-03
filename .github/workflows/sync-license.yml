@@ -1,0 +1,28 @@
+name: Dynamic License Sync
+
+on:
+  push:
+    # Trigger whenever changes are made directly to the LICENSE file
+    paths:
+      - 'LICENSE.md'
+      - 'LICENSE'
+    branches:
+      - main # Change to your default branch name if it is different
+
+jobs:
+  update-readme-license:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Inject License into README
+        uses: jasonatallah/markdown-include-action@v2
+
+      - name: Commit and Push Changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "docs: dynamically update license block in README"
