@@ -31,4 +31,3 @@ This repository and all of its contents are intended exclusively for the develop
 This notice grants no license, permission, authorization, or other rights to use, reproduce, distribute, modify, disclose, exploit, or otherwise make use of this software or any portion thereof.
 
 By accessing this repository, all authorized individuals acknowledge their responsibility to preserve the confidentiality of its contents and to refrain from any unauthorized disclosure or misuse. Any disclosure of confidential material outside the scope of authorized development may result in appropriate legal action to the fullest extent permitted under applicable law.
-
