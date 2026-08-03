@@ -2,12 +2,8 @@ name: Dynamic License Sync
 
 on:
   push:
-    # Trigger whenever changes are made directly to the LICENSE file
-    paths:
-      - 'LICENSE.md'
-      - 'LICENSE'
     branches:
-      - main # Change to your default branch name if it is different
+      - main # Garanta que seu branch padrão no GitHub se chama 'main' e não 'master'
 
 jobs:
   update-readme-license:
