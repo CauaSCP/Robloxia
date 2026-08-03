@@ -2,8 +2,12 @@ name: Dynamic License Sync
 
 on:
   push:
+    paths:
+      - 'LICENSE.md'
+      - 'LICENSE'
+      - 'README.md'
     branches:
-      - main # Garanta que seu branch padrão no GitHub se chama 'main' e não 'master'
+      - main
 
 jobs:
   update-readme-license:
@@ -14,11 +18,13 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          # Garante o histórico correto para realizar o commit de volta
+          fetch-depth: 0 
 
       - name: Inject License into README
-        uses: jasonatallah/markdown-include-action@v2
-
-      - name: Commit and Push Changes
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: tokusumi/markdown-embed-code@v1.1.1
         with:
-          commit_message: "docs: dynamically update license block in README"
+          markdown: "README.md"
+          token: ${{ secrets.GITHUB_TOKEN }}
+          message: "docs: dynamically update license block in README"

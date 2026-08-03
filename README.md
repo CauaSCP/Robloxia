@@ -4,8 +4,8 @@ Azul extracted lua and luau files from Project: Robloxia from Roblox Studio at R
 
 ## License
 
-<!-- include: LICENSE.md -->
-<!-- endinclude -->
+<!-- md-embed-code: LICENSE.md -->
+<!-- md-embed-code -->
 
 ## ⚠️ Disclaimer / Credits
 
