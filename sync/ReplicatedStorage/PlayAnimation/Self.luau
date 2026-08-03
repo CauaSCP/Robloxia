@@ -142,10 +142,10 @@ local function movesParent(track_val: AnimationTrack, parent_obj: Instance?,  id
 			local _id = (track_val::AnimationTrack).Animation.AnimationId
 			
 			
-			warn(`cases: {animationID}||{_id}||{c.Name} & {c.Name:sub(1, nameChild:len()):lower() == nameChild:lower()}`)
+			warn(`cases: {c.Name:find(`{animationID}`)} & {animationID}||{_id}||{c.Name} & {c.Name:sub(1, nameChild:len()):lower() == nameChild:lower()}`)
 			
 			if 
-				c.Name:find(`{_id}`)
+				(c.Name:find(`{animationID}`) ~= nil)
 					and
 				c.Name:sub(1, nameChild:len()):lower() == nameChild:lower()
 			then
@@ -156,17 +156,19 @@ local function movesParent(track_val: AnimationTrack, parent_obj: Instance?,  id
 	end)
 	
 	if (not success) or res == nil then
-		for _, c in ipairs(parent_obj:GetChildren()) do
-			if c.Name:sub(1) == '_' then
-				res = c
+		(function ()
+			for _, c in ipairs(parent_obj:GetChildren()) do
+				if c.Name:sub(1, 1) == '_' then
+					res = c
+				end
 			end
-		end
-		
-		if nameChild ~= nil then
-			res = Instance.new("ObjectValue")
-			res.Name = nameChild
-			res.Parent = (parent_obj :: Instance)
-		end
+			
+			if nameChild ~= nil and parent_obj:FindFirstChild(nameChild) == nil then
+				res = Instance.new("ObjectValue")
+				res.Name = nameChild
+				res.Parent = (parent_obj :: Instance)
+			end
+		end)()
 	end
 	assert(res ~= nil, `first child for {parent_obj.Name} doesn't exist`)
 	
@@ -202,7 +204,9 @@ local function movesParent(track_val: AnimationTrack, parent_obj: Instance?,  id
 			
 			local id: string? = (instance_val.Value::AnimationTrack).Animation.AnimationId
 			id = string.gsub(id, to_gsub, '')
-			
+
+			-- print(`names>\n\t{instance_val.Name}\n\t{`{tmp}{id}{idleAndEmoteBinsStr}`}\n`)
+
 			instance_val.Name = `{tmp}{id}{idleAndEmoteBinsStr}`
 			
 			task.wait(0.02)
