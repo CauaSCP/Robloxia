@@ -23,7 +23,7 @@ jobs:
           fetch-depth: 0 
 
       - name: Inject License into README
-        uses: tokusumi/markdown-embed-code@v1.1.1
+        uses: tokusumi/markdown-embed-code@v1.0.0
         with:
           markdown: "README.md"
           token: ${{ secrets.GITHUB_TOKEN }}
